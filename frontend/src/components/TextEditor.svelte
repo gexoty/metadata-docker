@@ -132,9 +132,9 @@
     }
 
     .btn:hover:not(:disabled) {
-        background: rgba(253, 125, 5, 0.1);
-        border-color: #fd7d05;
-        color: #fd7d05;
+        background: var(--color-primary-transparent);
+        border-color: var(--color-primary);
+        color: var(--color-primary);
     }
 
     .btn:disabled {
@@ -176,7 +176,7 @@
 
     textarea:focus {
         outline: none;
-        border-color: #fd7d05;
+        border-color: var(--color-primary);
     }
 
     .loading,
@@ -196,9 +196,9 @@
     }
 
     :global(body.dark) .btn:hover:not(:disabled) {
-        background: rgba(255, 159, 75, 0.15);
-        border-color: #ff9f4b;
-        color: #ff9f4b;
+        background: var(--color-primary-transparent-dark);
+        border-color: var(--color-primary-dark);
+        color: var(--color-primary-dark);
     }
 
     :global(body.dark) .btn:disabled {

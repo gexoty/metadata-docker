@@ -1,5 +1,27 @@
 /* src/app.css */
 
+:root {
+  --color-primary: #fd7d05;
+  --color-primary-focus: #ff5e00;
+  --color-primary-transparent: #fd7d0540;
+  --color-primary-dark: #ff9f4b;
+  --color-primary-dark-focus: #ffb06f;
+  --color-primary-transparent-dark: #ff9f4b30;
+  --color-lrc-playing-transparent: #fd7d050d;
+  --color-badge-audio: #fd7d05;
+  --color-badge-audio-background: #fd7d0540;
+  --color-badge-image: #6666ff;
+  --color-badge-image-background: #6666ff26;
+  --color-badge-text: #2e7d32;
+  --color-badge-text-background: #2e7d3226;
+  --color-badge-audio-dark: #ff9f4b;
+  --color-badge-audio-background-dark: #ff9f4b30;
+  --color-badge-image-dark: #8888ff;
+  --color-badge-image-background-dark: #8888ff33;
+  --color-badge-text-dark: #66bb6a;
+  --color-badge-text-background-dark: #66bb6a33;
+}
+
 html,
 body {
   margin: 0;
@@ -49,7 +71,7 @@ body {
 }
 
 .panel:hover {
-  border-color: #fd7d05;
+  border-color: var(--color-primary);
 }
 
 .panel-header {
@@ -95,7 +117,7 @@ body {
 
 .resizer:hover,
 .resizer.resizing {
-  background: #fd7d05;
+  background: var(--color-primary);
 }
 
 .resizer::after {
@@ -151,7 +173,7 @@ body {
   display: flex;
   align-items: center;
   gap: 4px;
-  color: #fd7d05;
+  color: var(--color-primary);
 }
 
 .refresh-btn {
@@ -169,7 +191,7 @@ body {
 
 .refresh-btn:hover {
   background: #f0f0f0;
-  color: #fd7d05;
+  color: var(--color-primary);
 }
 
 /* File tree panel */
@@ -210,7 +232,7 @@ body {
 }
 
 .retry-btn {
-  background: #fd7d05;
+  background: var(--color-primary);
   color: white;
   border: none;
   padding: 8px 16px;
@@ -221,7 +243,7 @@ body {
 }
 
 .retry-btn:hover {
-  background: #ff5e00;
+  background: var(--color-primary-focus);
 }
 
 /* Drag and drop styles */
@@ -255,7 +277,7 @@ body {
   top: 0;
   left: 0;
   height: 2px;
-  background-color: #fd7d05;
+  background-color: var(--color-primary);
   transition: width 0.2s ease;
   z-index: 10000;
   pointer-events: none;
@@ -263,7 +285,7 @@ body {
 
 /* Drag target highlight for folders */
 .drag-target {
-  outline: 2px solid #fd7d05 !important;
+  outline: 2px solid var(--color-primary) !important;
 }
 
 /* Search input styles */
@@ -287,8 +309,8 @@ body {
 
 .search-input:focus {
   outline: none;
-  border-color: #fd7d05;
-  box-shadow: 0 0 0 2px rgba(253, 125, 5, 0.1);
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 2px var(--color-primary-transparent);
 }
 
 .search-input::placeholder {
@@ -311,8 +333,8 @@ body {
 }
 
 .search-clear:hover {
-  color: #fd7d05;
-  background: rgba(253, 125, 5, 0.1);
+  color: var(--color-primary);
+  background: var(--color-primary-transparent);
 }
 
 @media (max-width: 1200px) {
@@ -333,11 +355,11 @@ body {
 /* Logout button */
 .logout-btn {
   background: transparent;
-  border: 1px solid #fd7d05;
+  border: 1px solid var(--color-primary);
   padding: 6px 10px;
   cursor: pointer;
   border-radius: 4px;
-  color: #fd7d05;
+  color: var(--color-primary);
   font-size: 13px;
   font-weight: 500;
   display: flex;
@@ -348,7 +370,7 @@ body {
 }
 
 .logout-btn:hover {
-  background: #fd7d05;
+  background: var(--color-primary);
   color: white;
 }
 
@@ -368,7 +390,7 @@ body {
 
 .theme-toggle,
 .help-toggle {
-  background: #fd7d05;
+  background: var(--color-primary);
   color: white;
   border: none;
   padding: 8px 16px;
@@ -400,7 +422,7 @@ body {
 }
 
 .theme-toggle:hover {
-  background: #ff5e00;
+  background: var(--color-primary-focus);
 }
 
 .help-toggle:hover {
@@ -446,7 +468,7 @@ body.dark .panel {
 }
 
 body.dark .panel:hover {
-  border-color: #ff9f4b;
+  border-color: var(--color-primary-dark);
 }
 
 body.dark .panel-header {
@@ -465,7 +487,7 @@ body.dark .refresh-btn {
 
 body.dark .refresh-btn:hover {
   background: transparent !important;
-  color: #ff9f4b;
+  color: var(--color-primary-dark);
 }
 
 body.dark .error-state {
@@ -477,11 +499,11 @@ body.dark .error-details {
 }
 
 body.dark .drag-target {
-  outline: 2px solid #ff9f4b !important;
+  outline: 2px solid var(--color-primary-dark) !important;
 }
 
 body.dark .upload-progress-bar {
-  background-color: #ff9f4b;
+  background-color: var(--color-primary-dark);
 }
 
 body.dark .search-input {
@@ -491,8 +513,8 @@ body.dark .search-input {
 }
 
 body.dark .search-input:focus {
-  border-color: #ff9f4b;
-  box-shadow: 0 0 0 2px rgba(255, 159, 75, 0.2);
+  border-color: var(--color-primary-dark);
+  box-shadow: 0 0 0 2px var(--color-primary-transparent-dark);
 }
 
 body.dark .search-input::placeholder {
@@ -504,17 +526,17 @@ body.dark .search-clear {
 }
 
 body.dark .search-clear:hover {
-  color: #ff9f4b;
-  background: rgba(255, 159, 75, 0.2);
+  color: var(--color-primary-dark);
+  background: var(--color-primary-transparent-dark);
 }
 
 body.dark .logout-btn {
-  border-color: #ff9f4b;
-  color: #ff9f4b;
+  border-color: var(--color-primary-dark);
+  color: var(--color-primary-dark);
 }
 
 body.dark .logout-btn:hover {
-  background: #ff9f4b;
+  background: var(--color-primary-dark);
   color: #1e1e1e;
 }
 
@@ -527,13 +549,13 @@ body.dark .status {
 }
 
 body.dark .theme-toggle {
-  background: #fd7d05;
+  background: var(--color-primary);
   color: #1e1e1e;
   min-width: 70px;
 }
 
 body.dark .theme-toggle:hover {
-  background: #ff9f4b;
+  background: var(--color-primary-dark);
 }
 
 body.dark .help-toggle {
@@ -577,7 +599,7 @@ body.dark .settings-toggle:hover {
 
 .create-folder-btn:hover {
   background-color: #f0f0f0;
-  color: #fd7d05;
+  color: var(--color-primary);
 }
 
 .create-folder-btn svg {
@@ -593,7 +615,7 @@ body.dark .create-folder-btn {
 
 body.dark .create-folder-btn:hover {
   background-color: #3d3d3d;
-  color: #ff9f4b;
+  color: var(--color-primary-dark);
 }
 
 .toggle-overview-btn {
@@ -610,12 +632,12 @@ body.dark .create-folder-btn:hover {
 
 .toggle-overview-btn:hover {
   background: rgba(0, 0, 0, 0.05);
-  color: #fd7d05;
+  color: var(--color-primary);
 }
 
 .toggle-overview-btn.active {
-  color: #fd7d05;
-  background: rgba(253, 125, 5, 0.1);
+  color: var(--color-primary);
+  background: var(--color-primary-transparent);
 }
 
 body.dark .toggle-overview-btn {
@@ -624,10 +646,10 @@ body.dark .toggle-overview-btn {
 
 body.dark .toggle-overview-btn:hover {
   background: rgba(255, 255, 255, 0.05);
-  color: #ff9f4b;
+  color: var(--color-primary-dark);
 }
 
 body.dark .toggle-overview-btn.active {
-  color: #ff9f4b;
-  background: rgba(255, 159, 75, 0.15);
+  color: var(--color-primary-dark);
+  background: var(--color-primary-transparent-dark);
 }

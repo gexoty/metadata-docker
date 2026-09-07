@@ -384,7 +384,7 @@
 
   .timestamp-input:focus {
     outline: none;
-    border-color: #fd7d05;
+    border-color: var(--color-primary);
   }
 
   .timestamp-example {
@@ -451,7 +451,7 @@
   }
 
   :global(body.dark) .timestamp-input:focus {
-    border-color: #ff9f4b;
+    border-color: var(--color-primary-dark);
   }
 
   :global(body.dark) .timestamp-example {
@@ -479,12 +479,12 @@
   }
 
   :global(body.dark) .btn-primary {
-    background: #ff9f4b;
+    background: var(--color-primary-dark);
     color: #1e1e1e;
   }
 
   :global(body.dark) .btn-primary:hover {
-    background: #ffb06f;
+    background: var(--color-primary-dark-focus);
   }
 
   :global(body.dark) .btn-small {
@@ -509,12 +509,12 @@
   }
 
   .btn-primary {
-    background-color: #fd7d05;
+    background-color: var(--color-primary);
     color: white;
   }
 
   .btn-primary:hover {
-    background-color: #ff5e00;
+    background-color: var(--color-primary-focus);
   }
 
   .btn-secondary {
@@ -544,12 +544,12 @@
 
   /* Dark mode button styles */
   :global(body.dark) .btn-primary {
-    background-color: #ff9f4b;
+    background-color: var(--color-primary-dark);
     color: #1e1e1e;
   }
 
   :global(body.dark) .btn-primary:hover {
-    background-color: #ffb06f;
+    background-color: var(--color-primary-dark-focus);
   }
 
   :global(body.dark) .btn-secondary {

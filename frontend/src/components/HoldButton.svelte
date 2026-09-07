@@ -123,11 +123,11 @@
     /* Match the exact hover behavior of original icon-btn */
     .hold-button.icon:hover:not(.disabled) {
         background: rgba(0, 0, 0, 0.1);
-        color: #fd7d05;
+        color: var(--color-primary);
     }
 
     .hold-button.icon.cover-art-icon:hover:not(.disabled) {
-        background: #fd7d05;
+        background: var(--color-primary);
         color: white;
     }
 
@@ -157,7 +157,7 @@
         left: 0;
         width: 100%;
         height: calc(100% * var(--progress));
-        background: #fd7d05;
+        background: var(--color-primary);
         opacity: 0.5; /* Increased from 0.3 to 0.5 */
         transition: height 0.1s linear;
         pointer-events: none;
@@ -168,8 +168,8 @@
     /* For cover art icons, make it even more visible */
     .hold-button.icon.cover-art-icon .progress-indicator::after {
         opacity: 0.7; /* Higher opacity for cover art icons */
-        background: #fd7d05;
-        box-shadow: inset 0 0 0 1px rgba(253, 125, 5, 0.3); /* Add a subtle border */
+        background: var(--color-primary);
+        box-shadow: inset 0 0 0 1px var(--color-primary-transparent); /* Add a subtle border */
     }
 
     /* For delete button in cover art */
@@ -227,7 +227,7 @@
         border-radius: 4px;
         padding: 0;
         overflow: hidden;
-        color: #fd7d05;
+        color: var(--color-primary);
     }
 
     .hold-button.text .progress-indicator {
@@ -254,7 +254,7 @@
         left: 0;
         width: calc(100% * var(--progress));
         height: 100%;
-        background: #fd7d05;
+        background: var(--color-primary);
         opacity: 0.15;
         transition: width 0.1s linear;
         pointer-events: none;
@@ -262,7 +262,7 @@
     }
 
     .hold-button.text:hover:not(.disabled) {
-        background: rgba(253, 125, 5, 0.1);
+        background: var(--color-primary-transparent);
     }
 
     /* Holding state visual feedback */
@@ -271,7 +271,7 @@
     }
 
     .hold-button.icon.holding {
-        background: rgba(253, 125, 5, 0.1); /* Orange tint when holding */
+        background: var(--color-primary-transparent); /* Orange tint when holding */
     }
 
     /* Delete button styling */
@@ -301,7 +301,7 @@
 
     :global(body.dark) .hold-button.icon:hover:not(.disabled) {
         background: rgba(255, 255, 255, 0.1);
-        color: #ff9f4b;
+        color: var(--color-primary-dark);
     }
 
     :global(body.dark) .hold-button.icon.cover-art-icon {
@@ -310,7 +310,7 @@
     }
 
     :global(body.dark) .hold-button.icon.cover-art-icon:hover:not(.disabled) {
-        background: #ff9f4b;
+        background: var(--color-primary-dark);
         color: white;
     }
 
@@ -328,19 +328,19 @@
     }
 
     :global(body.dark) .hold-button.text {
-        color: #ff9f4b;
+        color: var(--color-primary-dark);
     }
 
     :global(body.dark) .hold-button.text:hover:not(.disabled) {
-        background: rgba(255, 159, 75, 0.1);
+        background: var(--color-primary-transparent-dark);
     }
 
     :global(body.dark) .hold-button.icon.holding {
-        background: rgba(255, 159, 75, 0.2);
+        background: var(--color-primary-transparent-dark);
     }
 
     :global(body.dark) .hold-button.icon .progress-indicator::after {
-        background: #ff9f4b;
+        background: var(--color-primary-dark);
         opacity: 0.6; /* Increased from 0.4 to 0.6 */
     }
 
@@ -348,8 +348,8 @@
         .hold-button.icon.cover-art-icon
         .progress-indicator::after {
         opacity: 0.8; /* Even higher for dark mode cover art */
-        background: #ff9f4b;
-        box-shadow: inset 0 0 0 1px rgba(255, 159, 75, 0.4);
+        background: var(--color-primary-dark);
+        box-shadow: inset 0 0 0 1px var(--color-primary-transparent-dark);
     }
 
     :global(body.dark)

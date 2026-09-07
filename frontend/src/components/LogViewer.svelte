@@ -576,7 +576,7 @@
 
     .close-btn:hover {
         background: rgba(0, 0, 0, 0.1);
-        color: #fd7d05;
+        color: var(--color-primary);
     }
 
     .log-controls {
@@ -614,7 +614,7 @@
 
     .log-select:focus {
         outline: none;
-        border-color: #fd7d05;
+        border-color: var(--color-primary);
     }
 
     .search-container {
@@ -636,7 +636,7 @@
 
     .log-search:focus {
         outline: none;
-        border-color: #fd7d05;
+        border-color: var(--color-primary);
     }
 
     .search-clear {
@@ -654,8 +654,8 @@
     }
 
     .search-clear:hover {
-        color: #fd7d05;
-        background: rgba(253, 125, 5, 0.1);
+        color: var(--color-primary);
+        background: var(--color-primary-transparent);
     }
 
     .auto-refresh {
@@ -670,7 +670,7 @@
 
     .auto-refresh input[type="checkbox"] {
         cursor: pointer;
-        accent-color: #fd7d05;
+        accent-color: var(--color-primary);
     }
 
     .log-btn {
@@ -689,8 +689,8 @@
 
     .log-btn:hover:not(:disabled) {
         background: #f0f0f0;
-        border-color: #fd7d05;
-        color: #fd7d05;
+        border-color: var(--color-primary);
+        color: var(--color-primary);
     }
 
     .log-btn:disabled {
@@ -801,7 +801,7 @@
     }
 
     .retry-btn {
-        background: #fd7d05;
+        background: var(--color-primary);
         color: white;
         border: none;
         padding: 8px 24px;
@@ -812,7 +812,7 @@
     }
 
     .retry-btn:hover {
-        background: #ff5e00;
+        background: var(--color-primary-focus);
     }
 
     .log-footer {
@@ -833,7 +833,7 @@
     }
 
     .filter-badge {
-        background: #fd7d05;
+        background: var(--color-primary);
         color: white;
         padding: 2px 8px;
         border-radius: 2px;
@@ -853,8 +853,8 @@
 
     .close-footer-btn:hover {
         background: #f0f0f0;
-        border-color: #fd7d05;
-        color: #fd7d05;
+        border-color: var(--color-primary);
+        color: var(--color-primary);
     }
 
     @keyframes fadeIn {
@@ -910,7 +910,7 @@
 
     :global(body.dark) .close-btn:hover {
         background: rgba(255, 255, 255, 0.1);
-        color: #ff9f4b;
+        color: var(--color-primary-dark);
     }
 
     :global(body.dark) .log-controls {
@@ -946,8 +946,8 @@
 
     :global(body.dark) .log-btn:hover:not(:disabled) {
         background: #4a4a4a;
-        border-color: #ff9f4b;
-        color: #ff9f4b;
+        border-color: var(--color-primary-dark);
+        color: var(--color-primary-dark);
     }
 
     :global(body.dark) .download-btn {
@@ -974,8 +974,8 @@
 
     :global(body.dark) .refresh-btn:hover:not(:disabled) {
         background: #4a4a4a;
-        border-color: #ff9f4b;
-        color: #ff9f4b;
+        border-color: var(--color-primary-dark);
+        color: var(--color-primary-dark);
     }
 
     :global(body.dark) .log-display {
@@ -1012,7 +1012,7 @@
     }
 
     :global(body.dark) .filter-badge {
-        background: #ff9f4b;
+        background: var(--color-primary-dark);
         color: #1e1e1e;
     }
 
@@ -1023,8 +1023,8 @@
 
     :global(body.dark) .close-footer-btn:hover {
         background: #444;
-        border-color: #ff9f4b;
-        color: #ff9f4b;
+        border-color: var(--color-primary-dark);
+        color: var(--color-primary-dark);
     }
 
     :global(body.dark) .log-level.log-level-error {

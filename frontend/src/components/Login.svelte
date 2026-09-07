@@ -103,7 +103,7 @@
     position: fixed;
     bottom: 13px;
     right: 10px;
-    background: #fd7d05;
+    background: var(--color-primary);
     color: white;
     border: none;
     padding: 8px 16px;
@@ -119,7 +119,7 @@
   }
   
   .theme-toggle:hover {
-    background: #ff5e00;
+    background: var(--color-primary-focus);
     transform: translateY(-2px);
   }
   
@@ -192,19 +192,19 @@
   
   input:focus {
     outline: none;
-    border-color: #fd7d05;
-    box-shadow: 0 0 0 2px rgba(253, 125, 5, 0.2);
+    border-color: var(--color-primary);
+    box-shadow: 0 0 0 2px var(--color-primary-transparent);
   }
   
   .dark input:focus {
-    border-color: #ff9f4b;
-    box-shadow: 0 0 0 2px rgba(255, 159, 75, 0.2);
+    border-color: var(--color-primary-dark);
+    box-shadow: 0 0 0 2px var(--color-primary-transparent-dark);
   }
   
   button[type="submit"] {
     width: 100%;
     padding: 0.75rem;
-    background: #fd7d05;
+    background: var(--color-primary);
     color: white;
     border: none;
     border-radius: 4px;
@@ -214,9 +214,9 @@
   }
   
   button[type="submit"]:hover:not(:disabled) {
-    background: #ff5e00;
+    background: var(--color-primary-focus);
     transform: translateY(-2px);
-    /* box-shadow: 0 4px 12px rgba(253, 125, 5, 0.3); */
+    /* box-shadow: 0 4px 12px var(--color-primary-transparent); */
   }
   
   button[type="submit"]:disabled {

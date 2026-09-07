@@ -200,7 +200,7 @@
 
   .edit-textarea:focus {
     outline: none;
-    border-color: #fd7d05;
+    border-color: var(--color-primary);
   }
 
   .modal-info {
@@ -240,12 +240,12 @@
   }
 
   .btn-primary {
-    background-color: #fd7d05;
+    background-color: var(--color-primary);
     color: white;
   }
 
   .btn-primary:hover {
-    background-color: #ff5e00;
+    background-color: var(--color-primary-focus);
   }
 
   .btn-secondary {
@@ -288,7 +288,7 @@
   }
 
   :global(body.dark) .edit-textarea:focus {
-    border-color: #ff9f4b;
+    border-color: var(--color-primary-dark);
   }
 
   :global(body.dark) .modal-info {
@@ -297,12 +297,12 @@
   }
 
   :global(body.dark) .btn-primary {
-    background-color: #ff9f4b;
+    background-color: var(--color-primary-dark);
     color: #1e1e1e;
   }
 
   :global(body.dark) .btn-primary:hover {
-    background-color: #ffb06f;
+    background-color: var(--color-primary-dark-focus);
   }
 
   :global(body.dark) .btn-secondary {

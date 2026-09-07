@@ -236,15 +236,15 @@
     .refresh-btn {
         margin-top: 20px;
         background: transparent;
-        border: 1px solid #fd7d05;
-        color: #fd7d05;
+        border: 1px solid var(--color-primary);
+        color: var(--color-primary);
         padding: 6px 16px;
         border-radius: 4px;
         cursor: pointer;
         font-size: 14px;
     }
     .refresh-btn:hover {
-        background: rgba(253, 125, 5, 0.1);
+        background: var(--color-primary-transparent);
     }
 
     /* Dark mode */

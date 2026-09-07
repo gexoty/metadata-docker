@@ -865,7 +865,7 @@
         align-items: center;
         justify-content: center;
         width: 20px;
-        color: #fd7d05;
+        color: var(--color-primary);
     }
 
     .file .file-icon {
@@ -885,11 +885,11 @@
     }
 
     .file .format {
-        color: #fd7d05;
+        color: var(--color-badge-audio);
         font-size: 11px;
         font-weight: 500;
         padding: 2px 6px;
-        background: rgba(253, 125, 5, 0.1);
+        background: var(--color-badge-audio-background);
         border-radius: 4px;
         text-transform: uppercase;
         min-width: 50px; /* Gives a minimum width for consistency */
@@ -914,14 +914,14 @@
     /* Highlight for selected node */
     .file.selected,
     .directory.selected {
-        background-color: rgba(253, 125, 5, 0.15);
-        border-left: 3px solid #fd7d05;
+        background-color: var(--color-primary-transparent);
+        border-left: 3px solid var(--color-primary);
     }
 
     /* Keep hover effect but ensure selected stands out */
     .file.selected:hover,
     .directory.selected:hover {
-        background-color: rgba(253, 125, 5, 0.25);
+        background-color: var(--color-primary-transparent);
     }
 
     .context-menu {
@@ -954,7 +954,7 @@
     .rename-input {
         flex: 1;
         padding: 4px 8px;
-        border: 1px solid #fd7d05;
+        border: 1px solid var(--color-primary);
         border-radius: 4px;
         font-size: 14px;
         outline: none;
@@ -963,9 +963,9 @@
     }
 
     .file .format.image-format {
-        background: rgba(100, 100, 255, 0.15);
+        background: var(--color-badge-image-background);
         min-width: 50px;
-        color: #6666ff;
+        color: var(--color-badge-image);
     }
 
     .context-menu li.hold-delete-item {
@@ -973,8 +973,8 @@
     }
 
     .file .format.text-format {
-        background: rgba(0, 200, 0, 0.15);
-        color: #2e7d32;
+        background: var(--color-badge-text-background);
+        color: var(--color-badge-text);
     }
 
     /* Dark mode overrides */
@@ -993,7 +993,7 @@
     }
 
     :global(body.dark) .directory .toggle {
-        color: #ff9f4b;
+        color: var(--color-primary-dark);
     }
 
     :global(body.dark) .file .file-icon {
@@ -1002,19 +1002,19 @@
 
     :global(body.dark) .file.selected,
     :global(body.dark) .directory.selected {
-        background-color: rgba(255, 159, 75, 0.2);
-        border-left-color: #ff9f4b;
+        background-color: var(--color-primary-transparent-dark);
+        border-left-color: var(--color-primary-dark);
     }
 
     /* Keep hover effect but ensure selected stands out */
     :global(body.dark) .file.selected:hover,
     :global(body.dark) .directory.selected:hover {
-        background-color: rgba(255, 159, 75, 0.3);
+        background-color: var(--color-primary-transparent-dark);
     }
 
     :global(body.dark) .file .format {
-        background: rgba(255, 159, 75, 0.15);
-        color: #ff9f4b;
+        background: var(--color-badge-audio-background-dark);
+        color: var(--color-badge-audio-dark);
     }
 
     :global(body.dark) .context-menu {
@@ -1030,16 +1030,16 @@
     :global(body.dark) .rename-input {
         background: #3d3d3d;
         color: #e0e0e0;
-        border-color: #ff9f4b;
+        border-color: var(--color-primary-dark);
     }
 
     :global(body.dark) .file .format.image-format {
-        background: rgba(100, 100, 255, 0.2);
-        color: #8888ff;
+        background: var(--color-badge-image-background-dark);
+        color: var(--color-badge-image-dark);
     }
 
     :global(body.dark) .file .format.text-format {
-        background: rgba(0, 200, 0, 0.2);
-        color: #66bb6a;
+        background: var(--color-badge-text-background-dark);
+        color: var(--color-badge-text-dark);
     }
 </style>

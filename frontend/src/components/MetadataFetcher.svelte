@@ -957,7 +957,7 @@
   }
 
   .search-btn {
-    background: #fd7d05;
+    background: var(--color-primary);
     color: white;
     border: none;
     padding: 8px 20px;
@@ -967,7 +967,7 @@
     margin-top: 4px;
   }
   .search-btn:hover {
-    background: #e06f00;
+    background: var(--color-primary-focus);
   }
   .search-btn:disabled {
     opacity: 0.6;
@@ -1001,8 +1001,8 @@
     background: #f9f9f9;
   }
   .result-item.selected {
-    background: rgba(253, 125, 5, 0.1);
-    border-left: 3px solid #fd7d05;
+    background: var(--color-primary-transparent);
+    border-left: 3px solid var(--color-primary);
     border-radius: 3px;
   }
   .result-cover {
@@ -1049,7 +1049,7 @@
   }
   .field-item input[type="checkbox"] {
     margin: 0;
-    accent-color: #fd7d05;
+    accent-color: var(--color-primary);
   }
   .field-value {
     color: #555;
@@ -1107,7 +1107,7 @@
   }
   .file-enable input[type="checkbox"] {
     margin: 0;
-    accent-color: #fd7d05;
+    accent-color: var(--color-primary);
   }
   .file-name {
     font-weight: 500;
@@ -1166,7 +1166,7 @@
     background: rgba(0, 0, 0, 0.05);
   }
   .apply-btn {
-    background: #fd7d05;
+    background: var(--color-primary);
     color: white;
     border: none;
     padding: 8px 20px;
@@ -1175,7 +1175,7 @@
     cursor: pointer;
   }
   .apply-btn:hover {
-    background: #e06f00;
+    background: var(--color-primary-focus);
   }
   .apply-btn:disabled {
     opacity: 0.6;
@@ -1271,10 +1271,10 @@
     color: #e0e0e0;
   }
   :global(body.dark) .search-btn {
-    background: #ff9f4b;
+    background: var(--color-primary-dark);
   }
   :global(body.dark) .search-btn:hover {
-    background: #e08a3a;
+    background: var(--color-primary-dark-focus);
   }
   :global(body.dark) .result-item {
     border-color: #444;
@@ -1283,8 +1283,8 @@
     background: #3d3d3d;
   }
   :global(body.dark) .result-item.selected {
-    background: rgba(255, 159, 75, 0.2);
-    border-left-color: #ff9f4b;
+    background: var(--color-primary-transparent-dark);
+    border-left-color: var(--color-primary-dark);
   }
   :global(body.dark) .metadata-preview {
     border-color: #444;
@@ -1324,10 +1324,10 @@
     background: rgba(255, 255, 255, 0.1);
   }
   :global(body.dark) .apply-btn {
-    background: #ff9f4b;
+    background: var(--color-primary-dark);
   }
   :global(body.dark) .apply-btn:hover {
-    background: #e08a3a;
+    background: var(--color-primary-dark-focus);
   }
   :global(body.dark) .results-list {
     border: 1px solid #555;

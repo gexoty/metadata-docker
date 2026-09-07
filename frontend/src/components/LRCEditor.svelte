@@ -962,8 +962,8 @@
     }
 
     .close-btn:hover {
-        color: #fd7d05;
-        background-color: rgba(253, 125, 5, 0.1);
+        color: var(--color-primary);
+        background-color: var(--color-primary-transparent);
         transform: scale(1.1);
     }
 
@@ -1079,9 +1079,9 @@
     }
 
     .lyric-line.playing {
-        color: #fd7d05 !important;
+        color: var(--color-primary) !important;
         font-weight: 600 !important;
-        background-color: rgba(253, 125, 5, 0.05) !important;
+        background-color: var(--color-lrc-playing-transparent) !important;
     }
 
     .timestamp-line {
@@ -1093,9 +1093,9 @@
     }
 
     .timestamp-line.playing {
-        color: #fd7d05 !important;
+        color: var(--color-primary) !important;
         font-weight: 600 !important;
-        background-color: rgba(253, 125, 5, 0.05) !important;
+        background-color: var(--color-lrc-playing-transparent) !important;
     }
 
     .synced-line {
@@ -1104,9 +1104,9 @@
     }
 
     .synced-line.playing {
-        color: #fd7d05 !important;
+        color: var(--color-primary) !important;
         font-weight: 600 !important;
-        background-color: rgba(253, 125, 5, 0.05) !important;
+        background-color: var(--color-lrc-playing-transparent) !important;
     }
 
     .timestamp-container {
@@ -1147,8 +1147,8 @@
     }
 
     .timestamp-edit-btn:hover {
-        color: #fd7d05;
-        background-color: rgba(253, 125, 5, 0.1);
+        color: var(--color-primary);
+        background-color: var(--color-primary-transparent);
     }
 
     .timestamp-edit-btn svg {
@@ -1203,9 +1203,9 @@
     }
 
     .header-btn:hover {
-        background: rgba(253, 125, 5, 0.1);
-        border-color: #fd7d05;
-        color: #fd7d05;
+        background: var(--color-primary-transparent);
+        border-color: var(--color-primary);
+        color: var(--color-primary);
     }
 
     .header-btn.clear-timestamps {
@@ -1221,7 +1221,7 @@
         display: flex;
         align-items: center;
         gap: 8px;
-        background-color: #fd7d05;
+        background-color: var(--color-primary);
         color: white;
         padding: 10px 20px;
         border-radius: 6px;
@@ -1234,7 +1234,7 @@
     }
 
     .insert-time-btn:hover:not(:disabled) {
-        background-color: #ff5e00;
+        background-color: var(--color-primary-focus);
         transform: translateY(-1px);
     }
 
@@ -1290,12 +1290,12 @@
     }
 
     .btn-primary {
-        background-color: #fd7d05;
+        background-color: var(--color-primary);
         color: white;
     }
 
     .btn-primary:hover {
-        background-color: #e66c00;
+        background-color: var(--color-primary-focus);
         transform: translateY(-1px);
     }
 
@@ -1345,8 +1345,8 @@
     }
 
     :global(body.dark) .close-btn:hover {
-        color: #ff9f4b;
-        background-color: rgba(255, 159, 75, 0.1);
+        color: var(--color-primary-dark);
+        background-color: var(--color-primary-transparent-dark);
     }
 
     :global(body.dark) .space-parts {
@@ -1363,11 +1363,11 @@
     }
 
     :global(body.dark) .left-part {
-        border-right: 2px solid #ff9f4b !important;
+        border-right: 2px solid var(--color-primary-dark) !important;
     }
 
     :global(body.dark) .middle-part {
-        border-right: 2px solid #ff9f4b !important;
+        border-right: 2px solid var(--color-primary-dark) !important;
     }
 
     :global(body.dark) .column-header {
@@ -1402,8 +1402,8 @@
     }
 
     :global(body.dark) .timestamp-edit-btn:hover {
-        color: #ff9f4b;
-        background-color: rgba(255, 159, 75, 0.1);
+        color: var(--color-primary-dark);
+        background-color: var(--color-primary-transparent-dark);
     }
 
     :global(body.dark) .empty-state {
@@ -1411,12 +1411,12 @@
     }
 
     :global(body.dark) .insert-time-btn {
-        background-color: #ff9f4b;
+        background-color: var(--color-primary-dark);
         color: #1e1e1e;
     }
 
     :global(body.dark) .insert-time-btn:hover:not(:disabled) {
-        background-color: #ffb06f;
+        background-color: var(--color-primary-dark-focus);
     }
 
     :global(body.dark) .insert-time-btn:disabled {
@@ -1440,12 +1440,12 @@
     }
 
     :global(body.dark) .btn-primary {
-        background-color: #ff9f4b;
+        background-color: var(--color-primary-dark);
         color: #1e1e1e;
     }
 
     :global(body.dark) .btn-primary:hover {
-        background-color: #ffb06f;
+        background-color: var(--color-primary-dark-focus);
     }
 
     :global(.player) {
@@ -1463,9 +1463,9 @@
     }
 
     :global(body.dark) .header-btn:hover {
-        background: rgba(255, 159, 75, 0.1);
-        border-color: #ff9f4b;
-        color: #ff9f4b;
+        background: var(--color-primary-transparent-dark);
+        border-color: var(--color-primary-dark);
+        color: var(--color-primary-dark);
     }
 
     :global(body.dark) .header-btn.clear-timestamps {

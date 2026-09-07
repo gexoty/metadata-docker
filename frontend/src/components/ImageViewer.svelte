@@ -261,10 +261,10 @@
     }
 
     .expand-corner .icon-btn:hover {
-        background: #fd7d05;
+        background: var(--color-primary);
         color: white;
         transform: scale(1.05);
-        box-shadow: 0 4px 12px rgba(253, 125, 5, 0.3);
+        box-shadow: 0 4px 12px var(--color-primary-transparent);
     }
 
     .expand-corner .icon-btn svg {
@@ -287,7 +287,7 @@
     }
 
     .retry-btn {
-        background: #fd7d05;
+        background: var(--color-primary);
         color: white;
         border: none;
         padding: 8px 16px;
@@ -351,7 +351,7 @@
 
     .modal-close-btn:hover {
         background: rgba(0, 0, 0, 0.1);
-        color: #fd7d05;
+        color: var(--color-primary);
         transform: scale(1.05);
         border-color: rgba(255, 255, 255, 0.4);
     }
@@ -397,7 +397,7 @@
 
     .icon-btn:hover {
         background: rgba(0, 0, 0, 0.1);
-        color: #fd7d05;
+        color: var(--color-primary);
     }
 
     /* Dark mode */
@@ -407,16 +407,15 @@
     }
 
     :global(body.dark) .expand-corner .icon-btn {
-        /* background: rgba(61, 61, 61, 0.9); */
         backdrop-filter: blur(4px);
         color: #e0e0e0;
         box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
     }
 
     :global(body.dark) .expand-corner .icon-btn:hover {
-        background: #ff9f4b;
+        background: var(--color-primary-dark);
         color: #1e1e1e;
-        box-shadow: 0 4px 12px rgba(255, 159, 75, 0.3);
+        box-shadow: 0 4px 12px var(--color-primary-transparent-dark);
     }
 
     /* Dark mode adjustments */
@@ -427,7 +426,7 @@
 
     :global(body.dark) .expand-btn:hover {
         background: #3d3d3d;
-        color: #ff9f4b;
+        color: var(--color-primary-dark);
     }
 
     :global(body.dark) .modal-close-btn {
@@ -436,7 +435,7 @@
 
     :global(body.dark) .modal-close-btn:hover {
         background: rgba(0, 0, 0, 0.1);
-        color: #fd7d05;
+        color: var(--color-primary);
         transform: scale(1.05);
         border-color: rgba(255, 255, 255, 0.4);
     }

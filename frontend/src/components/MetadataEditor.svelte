@@ -1606,7 +1606,7 @@
     input:focus,
     textarea:focus {
         outline: none;
-        border-color: #fd7d05 !important; /* !important to override any existing border-color */
+        border-color: var(--color-primary) !important; /* !important to override any existing border-color */
     }
 
     .filename-badge {
@@ -1720,7 +1720,7 @@
 
     .icon-btn:hover {
         background: rgba(0, 0, 0, 0.1);
-        color: #fd7d05;
+        color: var(--color-primary);
     }
 
     .other-section {
@@ -1732,7 +1732,7 @@
     .collapse-toggle {
         background: none;
         border: none;
-        color: #fd7d05;
+        color: var(--color-primary);
         font-weight: 600;
         font-size: 14px;
         cursor: pointer;
@@ -1761,8 +1761,8 @@
 
     .add-field-btn {
         background: transparent;
-        border: 1px dashed #fd7d05;
-        color: #fd7d05;
+        border: 1px dashed var(--color-primary);
+        color: var(--color-primary);
         padding: 8px 16px;
         border-radius: 4px;
         font-size: 13px;
@@ -1772,7 +1772,7 @@
     }
 
     .add-field-btn:hover {
-        background: rgba(253, 125, 5, 0.1);
+        background: var(--color-primary-transparent);
     }
 
     /* Value row: flex container for input + icons */
@@ -1797,8 +1797,8 @@
 
     .action-btn {
         background: transparent;
-        border: 1px solid #fd7d05;
-        color: #fd7d05;
+        border: 1px solid var(--color-primary);
+        color: var(--color-primary);
         padding: 8px 16px;
         border-radius: 4px;
         font-size: 13px;
@@ -1807,7 +1807,7 @@
     }
 
     .action-btn:hover {
-        background: rgba(253, 125, 5, 0.1);
+        background: var(--color-primary-transparent);
     }
 
     .cover-art-container {
@@ -1870,7 +1870,7 @@
     }
 
     .cover-art-actions .icon-btn:hover {
-        background: #fd7d05;
+        background: var(--color-primary);
         color: white;
     }
 
@@ -1956,7 +1956,7 @@
     }
 
     .cover-art-expand .icon-btn:hover {
-        background: #fd7d05;
+        background: var(--color-primary);
         color: white;
     }
 
@@ -2028,7 +2028,7 @@
 
     .modal-close-btn:hover {
         background: rgba(0, 0, 0, 0.1);
-        color: #fd7d05;
+        color: var(--color-primary);
         border-color: rgba(255, 255, 255, 0.4);
         transform: scale(1.05);
     }
@@ -2125,7 +2125,7 @@
 
     .lyrics-textarea:focus {
         outline: none;
-        border-color: #fd7d05;
+        border-color: var(--color-primary);
     }
 
     .lyrics-modal-footer {
@@ -2158,8 +2158,8 @@
 
     .save-btn {
         background: transparent;
-        border: 1px solid #fd7d05;
-        color: #fd7d05;
+        border: 1px solid var(--color-primary);
+        color: var(--color-primary);
         padding: 8px 16px;
         border-radius: 4px;
         font-size: 13px;
@@ -2170,8 +2170,8 @@
     }
 
     .save-btn:hover {
-        background: rgba(253, 125, 5, 0.1);
-        color: #fd7d05;
+        background: var(--color-primary-transparent);
+        color: var(--color-primary);
     }
 
     .save-btn svg {
@@ -2187,8 +2187,8 @@
 
     .batch-apply-btn {
         background: transparent;
-        border: 1px solid #fd7d05;
-        color: #fd7d05;
+        border: 1px solid var(--color-primary);
+        color: var(--color-primary);
         padding: 10px 20px;
         border-radius: 4px;
         font-size: 13px;
@@ -2203,13 +2203,13 @@
     }
 
     .batch-apply-btn:hover {
-        background: rgba(253, 125, 5, 0.1);
+        background: var(--color-primary-transparent);
         transform: none;
         box-shadow: none;
     }
 
     .batch-apply-btn svg {
-        stroke: #fd7d05;
+        stroke: var(--color-primary);
         width: 16px;
         height: 16px;
     }
@@ -2221,7 +2221,7 @@
         padding: 8px 12px;
         background: rgba(0, 0, 0, 0.02);
         border-radius: 4px;
-        border-left: 2px solid #fd7d05;
+        border-left: 2px solid var(--color-primary);
         flex-wrap: wrap;
     }
 
@@ -2238,7 +2238,7 @@
     .checkbox-label input[type="checkbox"] {
         margin: 0;
         cursor: pointer;
-        accent-color: #ff9f4b;
+        accent-color: var(--color-primary-dark);
         width: 14px;
         height: 14px;
     }
@@ -2250,7 +2250,7 @@
 
     .field.dirty label::after {
         content: "●";
-        color: #fd7d05;
+        color: var(--color-primary);
         font-size: 12px;
         margin-left: 6px;
         display: inline-block;
@@ -2285,7 +2285,7 @@
 
     :global(body.dark) .icon-btn:hover {
         background: rgba(255, 255, 255, 0.1);
-        color: #ff9f4b;
+        color: var(--color-primary-dark);
     }
 
     :global(body.dark) .other-section {
@@ -2293,12 +2293,12 @@
     }
 
     :global(body.dark) .action-btn {
-        border-color: #ff9f4b;
-        color: #ff9f4b;
+        border-color: var(--color-primary-dark);
+        color: var(--color-primary-dark);
     }
 
     :global(body.dark) .action-btn:hover {
-        background: rgba(255, 159, 75, 0.1);
+        background: var(--color-primary-transparent-dark);
     }
 
     :global(body.dark) .cover-art-actions .icon-btn {
@@ -2307,7 +2307,7 @@
     }
 
     :global(body.dark) .cover-art-actions .icon-btn:hover {
-        background: #ff9f4b;
+        background: var(--color-primary-dark);
         color: white;
     }
 
@@ -2317,7 +2317,7 @@
     }
 
     :global(body.dark) .cover-art-expand .icon-btn:hover {
-        background: #ff9f4b;
+        background: var(--color-primary-dark);
         color: white;
     }
 
@@ -2340,7 +2340,7 @@
 
     :global(body.dark) .modal-close-btn:hover {
         background: rgba(0, 0, 0, 0.1);
-        color: #fd7d05;
+        color: var(--color-primary);
         border-color: rgba(255, 255, 255, 0.4);
         transform: scale(1.05);
     }
@@ -2365,31 +2365,31 @@
     }
 
     :global(body.dark) .save-btn {
-        border-color: #ff9f4b;
-        color: #ff9f4b;
+        border-color: var(--color-primary-dark);
+        color: var(--color-primary-dark);
     }
 
     :global(body.dark) .save-btn:hover {
-        background: rgba(255, 159, 75, 0.1);
-        color: #ff9f4b;
+        background: var(--color-primary-transparent-dark);
+        color: var(--color-primary-dark);
     }
 
     :global(body.dark) .batch-apply-btn {
-        border-color: #ff9f4b;
-        color: #ff9f4b;
+        border-color: var(--color-primary-dark);
+        color: var(--color-primary-dark);
     }
 
     :global(body.dark) .batch-apply-btn:hover {
-        background: rgba(255, 159, 75, 0.1);
+        background: var(--color-primary-transparent-dark);
     }
 
     :global(body.dark) .batch-apply-btn svg {
-        stroke: #ff9f4b;
+        stroke: var(--color-primary-dark);
     }
 
     :global(body.dark) .operation-controls {
         background: rgba(255, 255, 255, 0.05);
-        border-left-color: #ff9f4b;
+        border-left-color: var(--color-primary-dark);
     }
 
     :global(body.dark) .checkbox-label {

@@ -862,7 +862,7 @@
 
     .close-btn:hover {
         background: rgba(0, 0, 0, 0.1);
-        color: #fd7d05;
+        color: var(--color-primary);
     }
 
     .help-tabs {
@@ -889,7 +889,7 @@
 
     .tab-btn.active {
         background: white;
-        color: #fd7d05;
+        color: var(--color-primary);
         box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     }
 
@@ -912,7 +912,7 @@
         margin: 24px 0 12px;
         font-size: 16px;
         font-weight: 600;
-        color: #fd7d05;
+        color: var(--color-primary);
         border-bottom: 1px solid #eee;
         padding-bottom: 6px;
     }
@@ -940,7 +940,7 @@
     }
 
     .help-section strong {
-        color: #fd7d05;
+        color: var(--color-primary);
         font-weight: 600;
     }
 
@@ -967,7 +967,7 @@
     .icon-example svg {
         width: 16px;
         height: 16px;
-        color: #fd7d05;
+        color: var(--color-primary);
     }
 
     .tag-group {
@@ -1016,7 +1016,7 @@
         margin-top: 20px;
         padding: 12px 16px;
         background: #fff3e0;
-        border-left: 3px solid #fd7d05;
+        border-left: 3px solid var(--color-primary);
         font-size: 13px;
         color: #555;
     }
@@ -1041,8 +1041,8 @@
 
     .close-footer-btn:hover {
         background: #f0f0f0;
-        border-color: #fd7d05;
-        color: #fd7d05;
+        border-color: var(--color-primary);
+        color: var(--color-primary);
     }
 
     @keyframes fadeIn {
@@ -1087,8 +1087,8 @@
 
     .logs-footer-btn:hover {
         background: #f0f0f0;
-        border-color: #fd7d05;
-        color: #fd7d05;
+        border-color: var(--color-primary);
+        color: var(--color-primary);
     }
 
     .help-modal-footer {
@@ -1126,7 +1126,7 @@
     }
 
     .github-link:hover {
-        color: #fd7d05;
+        color: var(--color-primary);
     }
 
     .github-link svg {
@@ -1147,8 +1147,8 @@
 
     .close-footer-btn:hover {
         background: #f0f0f0;
-        border-color: #fd7d05;
-        color: #fd7d05;
+        border-color: var(--color-primary);
+        color: var(--color-primary);
     }
 
     /* Dark mode */
@@ -1171,7 +1171,7 @@
 
     :global(body.dark) .close-btn:hover {
         background: rgba(255, 255, 255, 0.1);
-        color: #ff9f4b;
+        color: var(--color-primary-dark);
     }
 
     :global(body.dark) .help-tabs {
@@ -1184,7 +1184,7 @@
 
     :global(body.dark) .tab-btn.active {
         background: #2d2d2d;
-        color: #ff9f4b;
+        color: var(--color-primary-dark);
     }
 
     :global(body.dark) .tab-btn:hover:not(.active) {
@@ -1197,7 +1197,7 @@
     }
 
     :global(body.dark) .help-section h3 {
-        color: #ff9f4b;
+        color: var(--color-primary-dark);
         border-color: #444;
     }
 
@@ -1215,7 +1215,7 @@
     }
 
     :global(body.dark) .icon-example svg {
-        color: #ff9f4b;
+        color: var(--color-primary-dark);
     }
 
     :global(body.dark) .tag-table {
@@ -1237,12 +1237,12 @@
 
     :global(body.dark) .tag-table code {
         background: #4a4a4a;
-        color: #ff9f4b;
+        color: var(--color-primary-dark);
     }
 
     :global(body.dark) .note {
         background: #3d3d3d;
-        border-left-color: #ff9f4b;
+        border-left-color: var(--color-primary-dark);
         color: #b0b0b0;
     }
 
@@ -1258,8 +1258,8 @@
 
     :global(body.dark) .close-footer-btn:hover {
         background: #444;
-        border-color: #ff9f4b;
-        color: #ff9f4b;
+        border-color: var(--color-primary-dark);
+        color: var(--color-primary-dark);
     }
 
     :global(body.dark) .footer-info {
@@ -1279,7 +1279,7 @@
     }
 
     :global(body.dark) .github-link:hover {
-        color: #ff9f4b;
+        color: var(--color-primary-dark);
     }
 
     :global(body.dark) .logs-footer-btn {
@@ -1289,7 +1289,7 @@
 
     :global(body.dark) .logs-footer-btn:hover {
         background: #444;
-        border-color: #ff9f4b;
-        color: #ff9f4b;
+        border-color: var(--color-primary-dark);
+        color: var(--color-primary-dark);
     }
 </style>

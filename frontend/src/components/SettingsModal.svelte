@@ -631,7 +631,7 @@
 
     .close-btn:hover {
         background: rgba(0, 0, 0, 0.1);
-        color: #fd7d05;
+        color: var(--color-primary);
     }
 
     .settings-content {
@@ -670,7 +670,7 @@
         margin: 0 0 16px 0;
         font-size: 16px;
         font-weight: 600;
-        color: #fd7d05;
+        color: var(--color-primary);
         border-bottom: 1px solid #eee;
         padding-bottom: 8px;
     }
@@ -699,7 +699,7 @@
         width: 16px;
         height: 16px;
         cursor: pointer;
-        accent-color: #fd7d05;
+        accent-color: var(--color-primary);
         flex-shrink: 0;
     }
 
@@ -728,7 +728,7 @@
 
     .scheme-input:focus {
         outline: none;
-        border-color: #fd7d05;
+        border-color: var(--color-primary);
     }
 
     .variable-buttons {
@@ -753,8 +753,8 @@
 
     .variable-tag {
         background: transparent;
-        border: 1px solid #fd7d05;
-        color: #fd7d05;
+        border: 1px solid var(--color-primary);
+        color: var(--color-primary);
         padding: 6px 12px;
         border-radius: 4px;
         font-size: 12px;
@@ -765,7 +765,7 @@
     }
 
     .variable-tag:hover {
-        background: rgba(253, 125, 5, 0.1);
+        background: var(--color-primary-transparent);
     }
 
     .example-preview {
@@ -796,19 +796,19 @@
     }
 
     .preview-scheme {
-        color: #fd7d05;
+        color: var(--color-primary);
         flex: 1;
         min-width: 0;
     }
 
     .preview-result {
-        color: #fd7d05;
+        color: var(--color-primary);
         flex: 1;
         min-width: 0;
     }
 
     .example-arrow {
-        color: #fd7d05;
+        color: var(--color-primary);
         font-weight: bold;
         flex-shrink: 0;
     }
@@ -817,7 +817,7 @@
         margin-top: 12px;
         padding: 8px 12px;
         background: #fff3e0;
-        border-left: 3px solid #fd7d05;
+        border-left: 3px solid var(--color-primary);
         font-size: 12px;
         color: #555;
         width: 100%;
@@ -848,12 +848,12 @@
 
     .cancel-btn:hover {
         background: #f0f0f0;
-        border-color: #fd7d05;
-        color: #fd7d05;
+        border-color: var(--color-primary);
+        color: var(--color-primary);
     }
 
     .save-btn {
-        background: #fd7d05;
+        background: var(--color-primary);
         border: none;
         padding: 8px 24px;
         border-radius: 6px;
@@ -864,9 +864,8 @@
     }
 
     .save-btn:hover {
-        background: #e66d00;
+        background: var(--color-primary-focus);
         transform: translateY(-1px);
-        box-shadow: 0 2px 8px rgba(253, 125, 5, 0.3);
     }
 
     @keyframes fadeIn {
@@ -936,7 +935,7 @@
         display: inline-flex;
         align-items: center;
         justify-content: center;
-        background: #fd7d05;
+        background: var(--color-primary);
         color: white;
         font-size: 12px;
         font-weight: 700;
@@ -980,7 +979,7 @@
         background: #fafafa;
         border-radius: 8px;
         padding: 14px 16px;
-        border-left: 3px solid #fd7d05;
+        border-left: 3px solid var(--color-primary);
         transition: background 0.2s;
     }
 
@@ -1055,7 +1054,7 @@
         padding: 0 4px;
         border-radius: 3px;
         font-size: 12px;
-        color: #fd7d05;
+        color: var(--color-primary);
         font-family: monospace;
     }
 
@@ -1078,7 +1077,7 @@
     }
 
     .field-checkbox-label input[type="checkbox"] {
-        accent-color: #fd7d05;
+        accent-color: var(--color-primary);
         width: 14px;
         height: 14px;
         cursor: pointer;
@@ -1104,11 +1103,11 @@
 
     :global(body.dark) .close-btn:hover {
         background: rgba(255, 255, 255, 0.1);
-        color: #ff9f4b;
+        color: var(--color-primary-dark);
     }
 
     :global(body.dark) .settings-section h3 {
-        color: #ff9f4b;
+        color: var(--color-primary-dark);
         border-color: #444;
     }
 
@@ -1135,7 +1134,7 @@
 
     :global(body.dark) .example-preview code {
         background: #2d2d2d;
-        color: #ff9f4b;
+        color: var(--color-primary-dark);
     }
 
     :global(body.dark) .example-preview strong {
@@ -1163,8 +1162,8 @@
 
     :global(body.dark) .cancel-btn:hover {
         background: #444;
-        border-color: #ff9f4b;
-        color: #ff9f4b;
+        border-color: var(--color-primary-dark);
+        color: var(--color-primary-dark);
     }
 
     :global(body.dark) .settings-content::-webkit-scrollbar-track {
@@ -1191,7 +1190,7 @@
         color: #e0e0e0;
     }
     :global(body.dark) .addon-count-badge {
-        background: #ff9f4b;
+        background: var(--color-primary-dark);
         color: #1e1e1e;
     }
     :global(body.dark) .summary-chevron {
@@ -1199,7 +1198,7 @@
     }
     :global(body.dark) .addon-item {
         background: #383838;
-        border-left-color: #ff9f4b;
+        border-left-color: var(--color-primary-dark);
     }
     :global(body.dark) .addon-item:hover {
         background: #404040;
@@ -1221,7 +1220,7 @@
     }
     :global(body.dark) .addon-details-grid code {
         background: #444;
-        color: #ff9f4b;
+        color: var(--color-primary-dark);
     }
     :global(body.dark) .addon-details-grid li.none {
         color: #888;

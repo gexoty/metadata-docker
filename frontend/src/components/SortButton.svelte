@@ -121,7 +121,7 @@
 
     .sort-btn:hover {
         background-color: #f0f0f0;
-        color: #fd7d05;
+        color: var(--color-primary);
     }
 
     .sort-label {
@@ -144,7 +144,7 @@
 
     .direction-btn:hover {
         background-color: #f0f0f0;
-        color: #fd7d05;
+        color: var(--color-primary);
     }
 
     .sort-menu {
@@ -174,12 +174,12 @@
 
     .sort-option:hover {
         background-color: #f0f0f0;
-        color: #fd7d05;
+        color: var(--color-primary);
     }
 
     .sort-option.active {
-        background-color: rgba(253, 125, 5, 0.1);
-        color: #fd7d05;
+        background-color: var(--color-primary-transparent);
+        color: var(--color-primary);
         font-weight: 500;
     }
 
@@ -191,7 +191,7 @@
 
     :global(body.dark) .sort-btn:hover {
         background-color: #3d3d3d;
-        color: #ff9f4b;
+        color: var(--color-primary-dark);
     }
 
     :global(body.dark) .direction-btn {
@@ -200,7 +200,7 @@
 
     :global(body.dark) .direction-btn:hover {
         background-color: #3d3d3d;
-        color: #ff9f4b;
+        color: var(--color-primary-dark);
     }
 
     :global(body.dark) .sort-menu {
@@ -214,11 +214,11 @@
 
     :global(body.dark) .sort-option:hover {
         background-color: #3d3d3d;
-        color: #ff9f4b;
+        color: var(--color-primary-dark);
     }
 
     :global(body.dark) .sort-option.active {
-        background-color: rgba(255, 159, 75, 0.2);
-        color: #ff9f4b;
+        background-color: var(--color-primary-transparent-dark);
+        color: var(--color-primary-dark);
     }
 </style>

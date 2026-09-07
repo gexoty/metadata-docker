@@ -415,7 +415,7 @@
 
     .progress {
         height: 100%;
-        background: #fd7d05;
+        background: var(--color-primary);
         width: 0%;
         transition: width 0.1s;
     }
@@ -440,7 +440,7 @@
         width: 40px;
         height: 40px;
         border-radius: 50%;
-        background: #fd7d05;
+        background: var(--color-primary);
         border: none;
         color: white;
         cursor: pointer;
@@ -451,7 +451,7 @@
     }
 
     .play-btn:hover {
-        background: #ff5e00;
+        background: var(--color-primary-focus);
     }
 
     .play-btn:disabled {
@@ -494,7 +494,7 @@
         height: 4px;
         background: linear-gradient(
             to right,
-            #fd7d05 calc(1% * var(--volume-percent, 30)),
+            var(--color-primary) calc(1% * var(--volume-percent, 30)),
             #e0e0e8 0
         );
         border-radius: 2px;
@@ -505,7 +505,7 @@
         width: 12px;
         height: 12px;
         border-radius: 2px;
-        background: #fd7d05;
+        background: var(--color-primary);
         cursor: pointer;
         margin-top: -4px;
         border: none;
@@ -521,7 +521,7 @@
     }
 
     .volume-slider::-moz-range-progress {
-        background: #fd7d05;
+        background: var(--color-primary);
         height: 4px;
         border-radius: 2px;
     }
@@ -530,7 +530,7 @@
         width: 12px;
         height: 12px;
         border-radius: 2px;
-        background: #fd7d05;
+        background: var(--color-primary);
         cursor: pointer;
         border: none;
         box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
@@ -582,7 +582,7 @@
     }
 
     :global(body.dark) .progress {
-        background: #ff9f4b; /* Slightly lighter orange for dark mode */
+        background: var(--color-primary-dark); /* Slightly lighter orange for dark mode */
     }
 
     :global(body.dark) .filename {
@@ -590,12 +590,12 @@
     }
 
     :global(body.dark) .play-btn {
-        background: #fd7d05;
+        background: var(--color-primary);
         color: #1e1e1e; /* Dark text on orange button for contrast */
     }
 
     :global(body.dark) .play-btn:hover:not(:disabled) {
-        background: #ff9f4b;
+        background: var(--color-primary-dark);
     }
 
     :global(body.dark) .play-btn:disabled {
@@ -620,13 +620,13 @@
     :global(body.dark) .volume-slider::-webkit-slider-runnable-track {
         background: linear-gradient(
             to right,
-            #ff9f4b calc(1% * var(--volume-percent, 30)),
+            var(--color-primary-dark) calc(1% * var(--volume-percent, 30)),
             #444 0
         );
     }
 
     :global(body.dark) .volume-slider::-webkit-slider-thumb {
-        background: #ff9f4b;
+        background: var(--color-primary-dark);
         box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
     }
 
@@ -636,11 +636,11 @@
     }
 
     :global(body.dark) .volume-slider::-moz-range-progress {
-        background: #ff9f4b;
+        background: var(--color-primary-dark);
     }
 
     :global(body.dark) .volume-slider::-moz-range-thumb {
-        background: #ff9f4b;
+        background: var(--color-primary-dark);
         box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
     }
 
