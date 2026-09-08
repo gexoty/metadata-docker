@@ -32,5 +32,5 @@
 32. ~~Folder overview(quick summary for missing main fields)~~
 33. Undo feature
 34. Support more audio file formats
-35. Key binds for LRC editor(quick actions)
-36. CSS variables
+35. ~~Key binds for LRC editor(quick actions)~~
+36. ~~CSS variables~~

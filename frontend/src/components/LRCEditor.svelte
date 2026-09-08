@@ -507,6 +507,69 @@
         }
     }
 
+    // Key binds
+    function handleKeydown(e) {
+        // Ignore if focus is inside an input/textarea or content-editable
+        const target = e.target;
+        if (
+            target.tagName === "INPUT" ||
+            target.tagName === "TEXTAREA" ||
+            target.isContentEditable
+        ) {
+            return;
+        }
+
+        const key = e.key.toLowerCase();
+        if (key === "s") {
+            e.preventDefault();
+            insertCurrentTimeToNextLine();
+        } else if (key === "c") {
+            e.preventDefault();
+            insertCurrentTimeToCurrentLine();
+        }
+    }
+
+    function insertCurrentTimeToCurrentLine() {
+        if (
+            currentActiveLine === -1 ||
+            currentActiveLine >= timestamps.length
+        ) {
+            toast.info("No active line to set timestamp");
+            return;
+        }
+        if (USLT === "") return;
+
+        // Use the stored current playback time
+        const time = currentPlaybackTime;
+        if (time === undefined || time === null) {
+            toast.error("Current playback time not available");
+            return;
+        }
+
+        const newTimestamp = secondsToTimestamp(time);
+        timestamps[currentActiveLine] = newTimestamp;
+
+        // Ensure timestamps length matches lines
+        const lines = USLT.split("\n");
+        while (timestamps.length < lines.length) {
+            timestamps.push("[--:--.--]");
+        }
+
+        updateSynchronizedLyricsText();
+        requestAnimationFrame(() => {
+            equalizeAllLineHeights();
+        });
+    }
+
+    $effect(() => {
+        if (isOpen) {
+            document.addEventListener("keydown", handleKeydown);
+            return () => {
+                document.removeEventListener("keydown", handleKeydown);
+            };
+        }
+    });
+
     // Listen for player time updates - using the existing player events
     onMount(() => {
         const handleTimeUpdate = (e) => {

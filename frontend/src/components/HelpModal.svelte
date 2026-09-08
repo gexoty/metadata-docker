@@ -248,6 +248,12 @@
                                 Click on any lyric line with a timestamp to jump
                                 to that position in the audio
                             </li>
+                            <li>
+                                Use <strong>S</strong> to synchronize next line
+                            </li>
+                            <li>
+                                Use <strong>C</strong> to insert current playback time to active line
+                            </li>
                         </ul>
 
                         <h3>Search & Sort</h3>
@@ -288,6 +294,12 @@
                             </li>
                             <li>
                                 <strong>Esc</strong> - Close modals/cancel rename
+                            </li>
+                            <li>
+                                <strong>S</strong> in Lyrics Editor - synchronize next line
+                            </li>
+                            <li>
+                                <strong>C</strong> in Lyrics Editor - insert current playback time to active line
                             </li>
                         </ul>
                     </div>
