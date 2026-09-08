@@ -1,6 +1,7 @@
 /* src/app.css */
 
 :root {
+  /* Default colors defined in settings.utils.js */
   --color-primary: #fd7d05;
   --color-primary-focus: #ff5e00;
   --color-primary-transparent: #fd7d0540;

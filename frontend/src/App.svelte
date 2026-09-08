@@ -27,9 +27,15 @@
     logout,
     getAuthHeaders,
     settings,
+    applyThemeFromSettings,
   } from "./utils/index.js";
 
   import "./app.css";
+
+  // Apply theme before any DOM updates
+  $effect.pre(() => {
+    applyThemeFromSettings($settings);
+  });
 
   // ========== STATE VARIABLES ==========
   let isLoading = $state(false);

@@ -7,6 +7,7 @@
         OVERVIEW_FIELD_NAMES,
         FIELD_METADATA,
         toast,
+        defaultColors,
     } from "../utils/index.js";
 
     let { isOpen, onClose } = $props();
@@ -454,6 +455,43 @@
                         </p>
                     </div>
                 </div>
+
+                <!-- Color Customization -->
+                <div class="settings-section">
+                    <h3>Color Customization</h3>
+                    <p class="section-description">
+                        Main accent and badge colors
+                    </p>
+
+                    <div class="color-picker-grid">
+                        {#each [{ key: "color-primary", label: "Main accent" }, { key: "color-badge-audio", label: "Audio badge" }, { key: "color-badge-image", label: "Image badge" }, { key: "color-badge-text", label: "Text badge" }] as item}
+                            <div class="color-picker-item">
+                                <input
+                                    type="color"
+                                    id={item.key}
+                                    bind:value={localSettings[item.key]}
+                                    title={item.label}
+                                />
+                                <span class="color-label">{item.label}</span>
+                            </div>
+                        {/each}
+                    </div>
+
+                    <div class="reset-colors-wrapper">
+                        <button
+                            class="reset-colors-btn"
+                            onclick={() => {
+                                for (const key of Object.keys(defaultColors)) {
+                                    localSettings[key] = defaultColors[key];
+                                }
+                                localSettings = { ...localSettings };
+                            }}
+                        >
+                            Reset colours to defaults
+                        </button>
+                    </div>
+                </div>
+
                 <!-- Loaded Addons Section -->
                 <div class="settings-section addon-section">
                     <details class="addon-details">
@@ -1083,6 +1121,59 @@
         cursor: pointer;
     }
 
+    .color-picker-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 16px;
+        margin: 12px 0 16px 0;
+    }
+
+    .color-picker-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 6px;
+    }
+
+    .color-picker-item input[type="color"] {
+        width: 48px;
+        height: 48px;
+        border: none;
+        padding: 0;
+        background: none;
+        cursor: pointer;
+        transition: box-shadow 0.2s;
+        outline: none;
+    }
+
+    .color-picker-item .color-label {
+        font-size: 12px;
+        color: #666;
+        text-align: center;
+        line-height: 1.3;
+        max-width: 80px;
+    }
+
+    .reset-colors-wrapper {
+        display: flex;
+        justify-content: center;
+        margin-top: 8px;
+    }
+
+    .reset-colors-btn {
+        background: var(--color-primary);
+        color: white;
+        border: none;
+        padding: 6px 24px;
+        border-radius: 6px;
+        font-size: 13px;
+        cursor: pointer;
+    }
+
+    .reset-colors-btn:hover {
+        background: var(--color-primary-focus);
+    }
+
     /* Dark mode */
     :global(body.dark) .settings-modal {
         background: #2d2d2d;
@@ -1234,5 +1325,14 @@
     }
     :global(body.dark) .field-checkbox-label {
         color: #e0e0e0;
+    }
+    :global(body.dark) .color-picker-item .color-label {
+        color: #bbb;
+    }
+    :global(body.dark) .reset-colors-btn {
+        background: var(--color-primary-dark);
+    }
+    :global(body.dark) .reset-colors-btn:hover {
+        background: var(--color-primary-dark-focus);
     }
 </style>
