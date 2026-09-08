@@ -15,3 +15,4 @@ export * from "./dom.utils.js";
 export * from "./settings.utils";
 export * from "./folderSummary.utils";
 export * from "./fieldMetadata.utils";
+export * from "./color.utils"
