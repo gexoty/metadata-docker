@@ -865,6 +865,17 @@
       }
 
       const data = await res.json();
+
+      // If creating inside a folder, make sure that parent is expanded
+      if (parentPath) {
+        expandedDirs.add(parentPath);
+        expandedDirs = new Set(expandedDirs); // trigger reactivity
+      }
+
+      // Select the newly created folder
+      selectedFolder = data.path; // or desiredPath if API doesn't return path
+      selectedFile = null;
+
       toast.success(`Folder created: ${data.path}`);
       await loadFileTree(); // refresh the tree to show the new folder
     } catch (e) {
