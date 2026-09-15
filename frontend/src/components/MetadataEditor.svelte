@@ -560,11 +560,16 @@
     async function handleSyncedLyricsSave(data) {
         const field = "lyrics";
 
-        // Update local state with the synchronized lyrics
-        metadata.lyrics = data.synchronizedLyrics || data.lyrics;
+        // If nothing was actually synced, write the plain text
+        // (FLAC lyrics field accepts both LRC and plain text).
+        // Otherwise write the LRC-formatted string.
+        const value = data.hasTimestamps
+            ? data.synchronizedLyrics
+            : data.lyrics;
 
+        metadata.lyrics = value;
         // Save to file
-        await applyToFile(field, data.synchronizedLyrics || data.lyrics);
+        await applyToFile(field, value);
 
         // Close modal
         showSyncedLyricsModal = false;

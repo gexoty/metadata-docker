@@ -452,10 +452,17 @@
 
     // ========== SAVE HANDLER ==========
     function handleSave() {
+        // A "real" timestamp is anything other than the empty placeholder
+        const hasTimestamps =
+            timestamps.length > 0 &&
+            timestamps.every((ts) => ts && ts !== "[--:--.--]");
+
         onSave({
             lyrics: USLT,
-            timestamps: timestamps,
-            synchronizedLyrics: synchronizedLyricsText,
+            timestamps,
+            // Only ship the LRC string when there is something to sync
+            synchronizedLyrics: hasTimestamps ? synchronizedLyricsText : null,
+            hasTimestamps,
         });
         onClose();
     }
