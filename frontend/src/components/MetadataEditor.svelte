@@ -739,7 +739,16 @@
     }
 
     function handleRefreshMetadata(e) {
-        if (e.detail.path === filePath) {
+        const refreshedPath = e.detail?.path;
+        if (!refreshedPath || !filePath) {
+            fetchMetadata(filePath);
+            return;
+        }
+        // Refresh if the selected file itself was updated, or if it lives inside a folder that was updated.
+        if (
+            refreshedPath === filePath ||
+            filePath.startsWith(refreshedPath + "/")
+        ) {
             fetchMetadata(filePath);
         }
     }
@@ -1606,7 +1615,9 @@
     input:focus,
     textarea:focus {
         outline: none;
-        border-color: var(--color-primary) !important; /* !important to override any existing border-color */
+        border-color: var(
+            --color-primary
+        ) !important; /* !important to override any existing border-color */
     }
 
     .filename-badge {

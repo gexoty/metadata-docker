@@ -412,11 +412,9 @@
         toast.success("Metadata applied to file");
       }
       window.dispatchEvent(new CustomEvent("refreshFileTree"));
-      if (!isFolder) {
-        window.dispatchEvent(
-          new CustomEvent("refreshMetadata", { detail: { path: targetPath } }),
-        );
-      }
+      window.dispatchEvent(
+        new CustomEvent("refreshMetadata", { detail: { path: targetPath } }),
+      );
       onClose();
     } catch (e) {
       toast.error(`Apply failed: ${e.message}`);
